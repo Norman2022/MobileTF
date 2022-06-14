@@ -19,7 +19,23 @@ public class LoginService {
     }
 
     public static void isViewLoaded(){
-        MobileActionManager.waitVisibility(LoginConstants.SIGN_UP_BUTTON_LOCATOR);
+        MobileActionManager.waitVisibility(LoginConstants.EMAIL_INPUT_LOCATOR);
         Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT_LOCATOR), LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
     }
+    public static void isViewIconTime(){
+        MobileActionManager.waitVisibility(LoginConstants.TITULO_HOME_XPATH);
+        Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.TITULO_HOME_XPATH), "No se pudo ingresar al workspace del usuario");
+    }
+
+   public static void clickBtnMenu(){
+        MobileActionManager.click(LoginConstants.MENU_CONFIG_XPATH);
+   }
+    public static void clickBtnLogout(){
+        MobileActionManager.click(LoginConstants.LOGOUT_BTN_XPATH);
+    }
+    public static void clickBtnConfirm(){
+        MobileActionManager.click(LoginConstants.CONFIRM_BTN_ID);
+    }
+
+
 }
