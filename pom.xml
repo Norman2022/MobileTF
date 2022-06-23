@@ -33,7 +33,7 @@
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.appLocation>C:\\\\Users\\\\nano\\\\lippia-mobile-sample-project\\\\sample_apk\\\\Clockify.apk</crowdar.appLocation>
+                <crowdar.appLocation>C:\\\\TrabajoFinal\\\\lippia-mobile-sample-project-\\\\sample_apk\\\\Clockify.apk</crowdar.appLocation>
                 <crowdar.deviceName>A12</crowdar.deviceName>
             </properties>
         </profile>

@@ -7,6 +7,7 @@ import com.crowdar.examples.constants.LoginConstants;
 import org.testng.Assert;
 import sun.security.mscapi.CPublicKey;
 
+import java.util.Date;
 import java.util.Objects;
 
 /**
@@ -25,7 +26,9 @@ public class HomeService {
     }
 
     public static void setFecha(String fecha) {
+
         MobileActionManager.click(HomeConstants.SET_DAY_BTN_XPATH, fecha);
+
     }
 
     public static void agregarTiempo(String hora, String flag) {

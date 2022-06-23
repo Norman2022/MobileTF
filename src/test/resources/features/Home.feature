@@ -1,7 +1,7 @@
 Feature: Un usuario interactua con la applicacion movil
 
 
-
+  @Demo
   Scenario Outline: El usuario agrega una tarea
     Given El usuario esta logueado
     When El hace click en el boton +
@@ -16,12 +16,8 @@ Feature: Un usuario interactua con la applicacion movil
     Then el usuario visualiza el nombre del proyecto: '<proyecto>'
 
     Examples:
-      | fecha         | horaInicio | horaFin | descripcion | proyecto | tarea | etiqueta |
-      | 19 junio 2022 | 22         | 23      | Testing     | TimeEntry | Test  | TimeEntry     |
-
-
-
-
+      | fecha         | horaInicio | horaFin | descripcion | proyecto  | tarea | etiqueta  |
+      | 18 julio 2022 | 22         | 23      | Testing     | TimeEntry | Test  | TimeEntry |
 
 
   Scenario Outline: El usuario agrega una tarea y descarta guardarla
@@ -38,7 +34,6 @@ Feature: Un usuario interactua con la applicacion movil
       | 19 junio 2022 | 22         | 23      |
 
 
-  @Demo
   Scenario: El usuario habilita el modo oscuro
 
     Given El usuario esta logueado

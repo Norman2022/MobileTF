@@ -27,6 +27,8 @@ public class HomeConstants {
     public static final String SETTING_BRN_XPATH = "xpath:/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/androidx.appcompat.widget.LinearLayoutCompat[4]/android.widget.CheckedTextView";
     public static final String DARK_MODE_BTN_ID = "id:settings_dark_mode";
 
+    public static final String BTN_NEXT_XPATH = "xpath://android.widget.ImageButton[@content-desc=\"Mes siguiente\"]";
+    public static final String BTN_PREV_XPATH = "xpath://android.widget.ImageButton[@content-desc=\"Mes anterior\"]";
 
 
 
