@@ -7,6 +7,6 @@
   "unicodeKeyboard": "true",
 
   "appPackage": "me.clockify.android",
-  "appActivity": "presenter.SplashActivity"
+  "appActivity": "me.clockify.android.presenter.SplashActivity"
 
 }

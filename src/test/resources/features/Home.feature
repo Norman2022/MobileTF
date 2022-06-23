@@ -1,8 +1,25 @@
 Feature: Un usuario interactua con la applicacion movil
 
 
-  @Demo
   Scenario Outline: El usuario agrega una tarea
+    Given El usuario esta logueado
+    When El hace click en el boton +
+    And El usuario hace click en la barra que muestra la fecha actual
+    And presiona el boton Start y agrega hora '<horaInicio>'  y hora '<horaFin>' de inicio
+    And presiona el boton Guardar
+    And hace click en '<proyecto>' y crea uno
+    And Agrega una '<descripcion>' de la tarea
+    And presiona el boton Guardar
+    Then el usuario visualiza el nombre del proyecto: '<proyecto>'
+
+    Examples:
+      | horaInicio | horaFin | descripcion | proyecto   |
+      | 20         | 22      | EntryTest   | proyectoFT |
+
+
+
+
+  Scenario Outline: El usuario agrega una tarea con Fecha
     Given El usuario esta logueado
     When El hace click en el boton +
     And El usuario hace click en la barra que muestra la fecha actual

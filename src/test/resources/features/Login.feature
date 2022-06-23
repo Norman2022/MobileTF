@@ -1,3 +1,4 @@
+@Demo
 Feature: Un usuario se Loguea y Desloguea de la app
 
   Scenario Outline: El usuario se loguea correctamente
